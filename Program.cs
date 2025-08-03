@@ -28,9 +28,22 @@ class Program
                 Console.WriteLine($"Resultado: {num1 + num2}");
                 break;
             case 3:
-                Console.WriteLine($"Resultado: ",num1 * num2);
+                Console.WriteLine($"Resultado: ", num1 * num2);
                 break;
-
+                
+            case 4: // <========== Agregue la division ***Elizandro***
+                if (num2 != 0)
+                {
+                    Console.WriteLine($"Resultado: {(double)num1 / num2}");
+                }
+                else
+                {
+                    Console.WriteLine("Error: No se puede dividir por cero");
+                }
+                break;
+            default:
+                Console.WriteLine("Opción no válida");
+                break;
         }
     }
-    }
+}
