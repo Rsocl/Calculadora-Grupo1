@@ -24,6 +24,9 @@ class Program
 
         switch (opcion)
         {
+            case 1:
+                Console.WriteLine($"Resultado: {num1 + num2}");
+                break;
             case 3:
                 Console.WriteLine($"Resultado: ",num1 * num2);
                 break;
